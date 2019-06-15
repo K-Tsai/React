@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>React Hello World</title>
+	<title>React Hello World</title>
+	<link rel="stylesheet" type="text/css" href="./mystyle.css">
 </head>
 <body>
 	<div id= "application-root"></div>
@@ -20,15 +21,64 @@ src= "https://unpkg.com/babel-standalone@6/babel.min.js">
 <script type ="text/babel">
 function App() {
 	return (
-		<div>
-			<h1>Hello, everyone!</h1>
-			<p>We think,</p>
-			<ul>
-				<li>React</li>
-				<li>is</li>
-				<li>brilliant!</li>
-			</ul>
-		</div>
+		<div className = "sally-resume-info">
+			<header>
+				<h1>Sally Student</h1> 
+			</header>
+			<main>
+				<section>
+					<p>Team player software developer with a can-do attitude,
+					phenomenal time management skills, and a strong user focus.
+					Has developed several web and mobile apps, including a home
+					security system using Raspberry Pi and a webcam.</p>
+				<header>
+					<h2>Employment History</h2>	
+				</header>
+				<p>
+					<span>Google</span><span className = "bold">Software Developer</span><span>October
+					2018 - present</span>	
+				</p>
+				<ul>
+					<li>Code and test software based upon software specifications
+					and design.</li>
+					<li>Troubleshoot and resolve issues in existing software</li>
+				</ul>
+				<p>
+					<span>Kroger</span><span className = "bold">Cashier</span><span>September 2017 
+					- September 2018</span>
+				</p>
+					<ul>
+						<li>Provided customers with information regarding products
+						and services.</li>
+						<li>Assisted other cashiers with questions, difficult customer
+						inquiries, and age restricted purchases</li>
+					</ul>
+					</section>
+					<section>
+						<header>
+							<h2>Education</h2>	
+						</header>	
+						<p>
+							<span>Wayne State University (Detroit, MI)</span><span>
+							December 2013 - December 2016</span><span>Bachelor of 
+							Science in Business Administration (Information Systems 
+							Management)</span>
+						</p>
+					</section>
+					<section>
+						<header>
+							<h2>Contact Info</h2>
+						</header>
+						<address>
+							<p className = "nameTitle">Sally Student</p>
+							<a href = "tel:248-555-5555">+248-555-5555</a>
+							<a href="mailto:Sally19234@gmail.com">Sally19234@gmail.com</a>
+							<img src="sallyImage.jpg" 
+							alt="Picture of Sally"/>
+						</address>
+					</section>	
+				</main>
+			</div>
 	);
 };
 	ReactDOM.render(
